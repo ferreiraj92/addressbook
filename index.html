@@ -1,0 +1,46 @@
+<!doctype html>
+<html class="no-js" lang="en" ng-app="addressBook">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Address Book</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" ng-href="css/main.css" />
+    <script src="js/vendor/modernizr.js"></script>
+    <!--GOOGLE FONTS-->
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,200' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+
+    <div id="container">
+      <h1 class="hidden">Address Book</h1>
+      <header id="header">
+        <h2 class="hidden">Main Header</h2>
+        <img src="img/logo.png">
+      </header>
+      <section class="row">
+        <h2 class="hidden">Views</h2>
+        <!--VIEW CONTROLLER-->
+        <div id="searchCont" ng-view>
+        </div>
+      </section>
+      <!--NAV-->
+      <nav>
+        <h2 class="hidden">Main Nav</h2>
+        <ul>
+          <a href="#/"><li class="active"><img src="img/searchcontact.svg"></li></a>
+          <a href="#/add"><li><img src="img/addcontact.svg"></li></a>
+        </ul>
+      </nav>
+    </div> 
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-routes.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

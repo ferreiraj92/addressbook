@@ -1,0 +1,34 @@
+<a id="top"></a>
+<div class="small-12 medium-6 columns">
+  <h3 class="hidden">Contact Info</h3>
+  <div id="msg">
+    <img src="img/user.png" alt="search icon">
+    <p>Please Select or Search a Contact</p>
+  </div>
+  <div id="info">
+    <ul id="contactInfo" class="hidden">
+      <li id="img" ng-repeat="contact in contactInfo"><img src="img/{{contact.contact_img}}"></li>
+      <li id="name" ng-repeat="contact in contactInfo"><img src="img/i_name.svg" alt="name icon">{{contact.contact_name}}</li>
+      <li id="title" ng-repeat="contact in contactInfo"><img src="img/i_title.svg" alt="title icon">{{contact.contact_title}}</li>
+      <li id="company" ng-repeat="contact in contactInfo"><img src="img/i_company.svg" alt="company icon">{{contact.contact_company}}</li>
+      <li id="cell" ng-repeat="contact in contactInfo"><img src="img/i_cell.svg" alt="cell icon">{{contact.contact_cell}}</li>
+      <li id="office" ng-repeat="contact in contactInfo"><img src="img/i_office.svg" alt="office icon">{{contact.contact_office}}</li>
+      <li id="email" ng-repeat="contact in contactInfo"><img src="img/i_email.svg" alt="email icon">{{contact.contact_email}}</li>
+      <li id="website" ng-repeat="contact in contactInfo"><img src="img/i_website.svg" alt="website icon">{{contact.contact_website}}</li>
+      <li id="address" ng-repeat="contact in contactInfo"><img src="img/i_address.svg" alt="address icon">{{contact.contact_address}}</li>
+    </ul>
+  </div>
+</div>
+<div id="listRow" class="small-12 medium-6 columns">
+  <div id="listCont">
+    <input id="searchForm" type="text" data-ng-model="conText" placeholder="Search Name">
+    <ul id="contactList">
+      <!--<input type="text" ng-model="nameInput">
+      <input type="submit" ng-click="getContact(nameInput)">
+      <select id="" ng-change="getContact(contactName)" ng-model="contactName.value">
+        <option ng-repeat="contact in contacts" value="{{contact.contact_id}}">{{contact.contact_name}}</option>
+      </select>-->
+      <a href="" ng-click="getContact(contact.contact_id)" ng-repeat="contact in contacts | filter: conText" value="{{contact.contact_id}}"><li ng-click="hideMsg()">{{contact.contact_name}}</li></a>
+    </ul>
+  </div>
+</div>

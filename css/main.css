@@ -1,0 +1,274 @@
+/*Global*/
+html {
+	background-color: #000066;
+}
+
+.hidden {
+	display: none;
+}
+
+h1,h2,h3,p,a {
+	color: #fff;
+	font-family: 'Work Sans', sans-serif;
+}
+
+ul {
+	list-style-type: none;
+}
+
+@media only screen { 
+body {
+	background: url(../img/bg_texture.jpg);
+	overflow-y: scroll;
+}
+
+#container {
+	width: 100%;
+	height: 100%;
+	overflow: scroll;
+	background-color: rgba(51, 51, 153, 0.8);
+	overflow-y: scroll;
+}
+
+/*App*/
+#header {
+	z-index: 1;
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	background-color: #000066;
+}
+
+#header img {
+	display: block;
+	height: 40px;
+	width: auto;
+	margin: 5px auto;
+}
+
+#searchCont {
+	width: 100%;
+	height: 100%;
+	padding: 25px;
+}
+
+nav {
+	z-index: 1;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	background-color: #000066;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	width: 50%;
+	padding: 8px;
+	float: left;
+	text-align: center;
+	font-size: 1em;
+}
+
+nav ul li:hover {
+	background-color: #000055;
+}
+
+.active {
+	background-color: #000044;
+}
+
+#msg, #contactInfo, #contactList, #searchForm, form {
+	margin-top: 50px;
+}
+
+/*Search Contact Prompt*/
+#msg img {
+	display: block;
+	margin: 25px auto;
+	height: 150px;
+	width: auto;
+}
+
+#msg p {
+	text-align: center;
+	font-size: 2em;
+}
+
+#contactInfo, #contactList, #searchForm, form {
+	width: 90%;
+}
+
+/*Contact Info*/
+#contactInfo {
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: 60px auto;
+	color: #ffffff;
+	font-size: 1.1em;
+}
+
+#contactInfo li {
+	margin-bottom: 16px;
+}
+
+#contactInfo li img {
+	margin-right: 25px;
+}
+
+#img img {
+	height: 125px;
+	width: auto;
+}
+
+/*Contact List*/
+#contactList {
+	border-top: 1px solid #ffffff;
+	border-bottom: 1px solid #ffffff;
+	margin-bottom: 100px;
+}
+
+#contactList li {
+	padding: 16px;
+	font-size: 1.2em;
+}
+
+#contactList li:hover {
+	background: rgba(255,255,255,0.9);
+	color: #000066;
+}
+
+#searchForm {
+	background: url(../img/i_search.svg) 5px 3px no-repeat !important;
+}
+
+/*Add Contact*/
+#searchForm, form {
+	margin-left: 5%;
+}
+
+form {
+	padding-bottom: 50px;
+}
+
+input{
+	height: 44px !important;
+	padding: 0px 50px !important;
+	margin-bottom: 12px;
+	background-color: rgba(0,0,0,0) !important;
+	color: #ffffff !important;
+	border-radius: 6px !important;
+}
+
+/*form input imgs*/
+form input[name='name'] {
+	background: url(../img/i_name.svg) 5px 3px no-repeat !important;
+}
+
+form input[name='title'] {
+	background: url(../img/i_title.svg) 5px 3px no-repeat !important;
+}
+
+form input[name='company'] {
+	background: url(../img/i_company.svg) 5px 3px no-repeat !important;
+}
+
+form input[name='cell'] {
+	background: url(../img/i_cell.svg) 5px 3px no-repeat !important;
+}
+
+form input[name='office'] {
+	background: url(../img/i_office.svg) 5px 3px no-repeat !important;
+}
+
+form input[name='email'] {
+	background: url(../img/i_email.svg) 5px 3px no-repeat !important;
+}
+
+form input[name='website'] {
+	background: url(../img/i_website.svg) 5px 3px no-repeat !important;
+}
+
+form input[name='address'] {
+	background: url(../img/i_address.svg) 5px 3px no-repeat !important;
+}
+
+form button {
+	display: block;
+	margin: 0 auto;
+	height: 50px;
+	width: 140px;
+	font-size: .8em;
+	background: none;
+	border: 1px solid #ffffff;
+}
+
+form button:hover {
+	background: #ffffff;
+	color: #000066;
+}
+
+form button:focus {
+	background: #ffffff;
+	color: #000066;
+}
+
+form button:active {
+	margin-top: -1px;
+}
+
+form p {
+	margin-top: 10px;
+	text-align: center;
+}
+}
+
+
+@media only screen and (min-width: 40.063em) { 
+body {
+	overflow: hidden;
+}
+
+nav ul li {
+	font-size: 1.5em;
+}
+
+#msg img {
+	margin: 75px auto;
+	height: 200px;
+}
+
+#img img {
+	height: 200px;
+	width: auto;
+}
+
+#container {
+	overflow: hidden;
+}
+
+#listCont {
+	height: 100vh;
+	width: 100%;
+	padding-top: 25px;
+	overflow: scroll;
+}
+
+#contactInfo {
+	width: 425px;
+	font-size: 1.2em;
+}
+
+#contactList {
+	border-top: none;
+	border-bottom: none;
+	border-left: 1px solid #ffffff;
+}
+
+}
+

@@ -1,0 +1,16 @@
+<div class="small-12 columns">
+	<h3 class="hidden">Add Contact</h3>
+	<form>
+		<input type="text" name="name" ng-model="name" placeholder="Full Name">
+		<input type="text" name="title" ng-model="title" placeholder="Title">
+		<input type="text" name="company" ng-model="company" placeholder="Company">
+		<input type="tel" name="cell" ng-model="cell" placeholder="Cell Number">
+		<input type="tel" name="office" ng-model="office" placeholder="Office Number">
+		<input type="email" name="email" ng-model="email" placeholder="Email">
+		<input type="text" name="website" ng-model="website" placeholder="Website">
+		<input type="text" name="address" ng-model="address" placeholder="Address">
+		<button type="submit" ng-click="addContact(name, title, company, cell, office, email, website, address)">Add Contact</button>
+		<span ng-model="msg" ng-bind></span>
+		<p ng-bind="msg"></p>
+	</form>
+</div>
